@@ -1,0 +1,128 @@
+/* Start Box */
+.d-flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+/* End Box */
+/* Start padding and margin*/
+.p-10 {
+  padding: 10px;
+}
+.p-20 {
+  padding: 20px;
+}
+.m-0 {
+  margin: 0;
+}
+.m-20 {
+  margin: 20px;
+}
+.mt-0 {
+  margin-top: 0;
+}
+/* End Padding and margin */
+/* Start Colors */
+.bg-white {
+  background-color: white;
+}
+.bg-ddd {
+  background-color: #ddd;
+}
+.bg-eee {
+  background-color: #eee;
+}
+.c-black {
+  color: black;
+}
+/* End Colors */
+/* start fonts*/
+.txt-c {
+  text-align: center;
+}
+.txt-l {
+  text-align: left;
+}
+.w-full {
+  width: 100%;
+}
+/* end fonts*/
+.p-relative {
+  position: relative;
+}
+/* Start borders*/
+.br-6 {
+  border-radius: 6px;
+}
+.br-10 {
+  border-radius: 10px;
+}
+/* End borders*/
+/* start components */
+.between-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .tex-c {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .block-mobile {
+    display: block;
+  }
+  .hide-mobile {
+    display: none;
+  }
+}
+/* end components */
+.d-grid {
+  display: grid;
+}
+.gap-20 {
+  gap: 20px;
+}
+.checkbox-toggle {
+  appearance: none;
+}
+.switch-toggle {
+  width: 78px;
+  height: 32px;
+  background-color: #ddd;
+  border-radius: 16px;
+  bottom: 16px;
+  position: relative;
+  /* margin-right: 20px; */
+  transition: 0.3s;
+}
+.switch-toggle::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f00d";
+  position: absolute;
+  font-weight: 900;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  color: #aaa;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.checkbox-toggle:checked + .switch-toggle {
+  background-color: var(--blue-color);
+}
+.checkbox-toggle:checked + .switch-toggle::before {
+  content: "\f00c";
+  left: 50px;
+  color: var(--blue-color);
+}
